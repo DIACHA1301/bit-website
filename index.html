@@ -15,7 +15,7 @@
         <img src="./assets/me.jpeg" alt="Diana" />
       </figure>
       <nav>
-        <ul>
+        <ul class="list1">
           <li><a href="#Perfil">Perfil</a></li>
           <li><a href="#Experiencia">Experiencia</a></li>
           <li><a href="#Habilidades">Habilidades</a></li>
@@ -25,6 +25,10 @@
           <li><a href="#referencias">Referencias</a></li>
           <li><a href="#contacto">Contacto</a></li>
         </ul>
+        <div class="search"> 
+        <label for="search">Buscar</label>
+        <input type="search" id="search">
+      </div>
       </nav>
     </header>
     <!-- Contenido principal -->
@@ -41,7 +45,7 @@
         </section>
 
         <section id="Experiencia">
-          <h2>Experiencia</h2>
+          <h2 class="title2">Experiencia</h2>
           <ul>
             <li>Analista QA - Empresa</li>
             <li>Analista de requerimientos - Empresa</li>
@@ -50,17 +54,17 @@
         </section>
 
         <section id="Habilidades">
-          <h2>Habilidades</h2>
+          <h2 class="title2">Habilidades</h2>
           <p>Trabajo en equipo</p>
           <br />
           <p>Definicion del backlog de proyectos de TI</p>
         </section>
         <section id="preferencias">
-          <h2>Preferencias</h2>
+          <h2 class="title2">Preferencias</h2>
           <p>Potenciar habiliades en los equipos de trabajo, capacitando</p>
         </section>
         <section id="datosRandom">
-          <h2>Datos Random</h2>
+          <h2 class="title2">Datos Random</h2>
           <p>
             Soy ingeniera industrial de profesion, sin embargo tengo experiencia
             en otros ambientes
@@ -93,8 +97,8 @@
 
       <aside>
         <section id="Hobbies">
-          <h2>Hobbies</h2>
-          <h3>Cancion favorita</h3>
+          <h2 class="title2">Hobbies</h2>
+          <h3 class="title3">Cancion favorita</h3>
           <iframe
             width="560"
             height="315"
@@ -107,7 +111,7 @@
           ></iframe>
         </section>
         <section id="referencias">
-          <h2>Referencias</h2>
+          <h2 class="title2">Referencias</h2>
           <table>
             <tr>
               <th>Nombre</th>
@@ -129,12 +133,14 @@
           </table>
         </section>
         <section id="contacto">
-          <h2>Contacto</h2>
+          <h2 class="title2">Contacto</h2>
           <form>
             <label for="name">Nombre</label>
-            <input type="text" id="name" />
-            <label for="email">email</label>
-            <input type="email" id="email" />
+            <input type="text" id="name" placeholder="Nombre Completo" required/>
+            <label for="numero">Numero</label>
+            <input type="number" id= "numero" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" required />
             <label for="mensaje">mensaje</label>
             <textarea id="mensaje" placeholder="Escriba su mensaje"></textarea>
             <button type="submit">Enviar</button>

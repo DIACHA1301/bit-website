@@ -4,6 +4,13 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+  :root{
+    --alineacion-textalign:center ;
+    --primary-color:pink;
+    --fondo-background:orange;
+
+  }
   
   body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -15,7 +22,7 @@
   
   header {
     background-color: #003366;
-    color: white;
+    color: var(--primary-color);
     padding: 20px;
     text-align: center;
     border-radius: 10px;
@@ -48,15 +55,24 @@
     text-decoration: none;
     font-weight: bold;
     padding: 8px 16px;
-    background-color: #005fa3;
+    background-color: pink;
     border-radius: 8px;
     transition: background-color 0.3s ease;
   }
   
   nav a:hover {
-    background-color: #007acc;
+    background-color: var(--fondo-background);
   }
-  
+  .search{
+    justify-content: right;
+    display: flex;
+    
+
+  }
+  .title2{
+    color: var(--primary-color);
+    
+  }
   .contenido {
     display: flex;
     gap: 20px;
