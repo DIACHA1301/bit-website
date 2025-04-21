@@ -10,10 +10,17 @@
   <body>
     <!-- Encabezado -->
     <header>
+      <div class="search-box">
+        <label for="search">Buscar</label>
+        <input type="search" id="search" />
+      </div>
+    
       <h1>Sobre mi</h1>
+    
       <figure>
         <img src="./assets/me.jpeg" alt="Diana" />
       </figure>
+    
       <nav>
         <ul class="list1">
           <li><a href="#Perfil">Perfil</a></li>
@@ -25,12 +32,9 @@
           <li><a href="#referencias">Referencias</a></li>
           <li><a href="#contacto">Contacto</a></li>
         </ul>
-        <div class="search"> 
-        <label for="search">Buscar</label>
-        <input type="search" id="search">
-      </div>
       </nav>
     </header>
+    
     <!-- Contenido principal -->
     <div class="contenido">
       <main>
@@ -93,6 +97,10 @@
             </dd>
           </ul>
         </section>
+        <section>
+          <h2 class="title2">Receta Favorita</h2>
+          <a href="./LessonHTML/receta.html">Arroz con leche</a>
+        </section>
       </main>
 
       <aside>
@@ -113,32 +121,39 @@
         <section id="referencias">
           <h2 class="title2">Referencias</h2>
           <table>
-            <tr>
-              <th>Nombre</th>
-              <th>Celular</th>
-              <th>Rol</th>
-              <tbody>
-                <tr>
-                  <td>Alguien</td>
-                  <td>12345678</td>
-                  <td>Professional</td>
-                </tr>
-                <tr>
-                  <td>Otro</td>
-                  <td>12345678</td>
-                  <td>Professional</td>
-                </tr>
-              </tbody>
-            </tr>
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>Celular</th>
+                <th>Rol</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Alguien</td>
+                <td>12345678</td>
+                <td>Professional</td>
+              </tr>
+              <tr>
+                <td>Otro</td>
+                <td>12345678</td>
+                <td>Professional</td>
+              </tr>
+            </tbody>
           </table>
         </section>
         <section id="contacto">
           <h2 class="title2">Contacto</h2>
           <form>
             <label for="name">Nombre</label>
-            <input type="text" id="name" placeholder="Nombre Completo" required/>
+            <input
+              type="text"
+              id="name"
+              placeholder="Nombre Completo"
+              required
+            />
             <label for="numero">Numero</label>
-            <input type="number" id= "numero" required>
+            <input type="number" id="numero" required />
             <label for="email">Email</label>
             <input type="email" id="email" required />
             <label for="mensaje">mensaje</label>
