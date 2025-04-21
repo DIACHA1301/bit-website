@@ -1,34 +1,101 @@
-/* General */
-* {
+:root {
+    --color-bg: #fff8f0;
+    --color-primary: #a0522d;
+    --color-accent: #f4a460;
+    --color-text: #333;
+    --font-main: 'Segoe UI', sans-serif;
+  }
+  
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
-}
-
-
-body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #ced8e2;
-    display: grid;
-}
-
-header{
-    color: rgb(219, 87, 109);
-    padding: 20px;
+  }
+  
+  body {
+    font-family: var(--font-main);
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    line-height: 1.6;
+    padding: 1rem;
+  }
+  
+  header {
     text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.title2 {
-    color: rgb(230, 86, 86);
-    text-align:left;
-    padding: 20px;
-}
-
-.title3 {
-    height: auto;
-    padding: 20px;
-    justify-content: left;
-}
+    padding: 2rem 0;
+    background-color: var(--color-accent);
+    color: white;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    margin: 2rem 0;
+  }
+  
+  .receta {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .imagen-receta img {
+    max-width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  .title2 {
+    color: var(--color-primary);
+    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+  }
+  
+  .title3 {
+    color: var(--color-accent);
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+  }
+  
+  ul, ol {
+    padding-left: 1.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  footer {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: var(--color-accent);
+    margin-top: 2rem;
+  }
+  
+  footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* 📱 Responsive */
+  @media (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: 1fr;
+    }
+  
+    header h1 {
+      font-size: 2rem;
+    }
+  }
+  
